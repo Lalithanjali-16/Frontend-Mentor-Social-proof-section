@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:ital,wght@0,100;0,300;1,100&family=League+Spartan:wght@400;500;700&family=Montserrat:wght@500;700&family=Outfit:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+}
+body{
+    font-size: 15px;
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(bg-pattern-top-desktop.svg);
+    background-image: url(bg-pattern-bottom-desktop.svg);
+}
+main{
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+.main{
+    max-width: 80%;
+    margin: 0 auto 80px auto;
+}
+.container{
+    position: relative;
+    top:50px;
+}
+.cointainer{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    padding: 20px;
+    max-width: 40%;
+    margin-left: 20px;
+}
+.right{
+    max-width: 60%;
+    padding-top: 40px;
+    margin-right: 100px;
+}
+.number{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 50px;
+}
+.text{
+    padding-top: 20px;
+    color: hsl(303, 10%, 53%);
+    line-height: 150%;
+}
+.card{
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.card-1{
+    right: 90px;
+}
+.card-2{
+    right: 50px;
+}
+.card-3{
+    right: 0px;
+}
+.rating{
+    font-weight: bold;
+    color: hsl(300, 43%, 22%);
+    margin-left: 15px;
+}
+.comments{
+    display: flex;
+    position: relative;
+    bottom: 50px;
+    margin-left: 190px;
+}
+.comment-1,.comment-2,.comment-3{
+    background-color: hsl(300, 43%, 22%);
+    width: 340px;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 50px;
+    position: relative;
+}
+.comment-2{
+    top:15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.comment-3{
+    top: 30px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    line-height: 15px;
+}
+.profile img{
+    border-radius: 50%;
+    width: 50px;
+}
+.full-name,.profession{
+    margin-left: 20px;
+    line-height: 150%;
+}
+.full-name{
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+}
+.profession{
+    color: hsl(333, 80%, 67%);
+}
+.description{
+    color:  hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+    display: inline;
+    font-size: 14px;
+}
+@media(max-width:765){
+body{
+background-image: url(bg-pattern-top-mobile.svg);
+}
+.container{
+    flex-direction: column;
+}
+.left{
+    text-align: center;
+}
+.number{
+    font-size: 30px;
+}
+.text{
+    font-size: 13px;
+    padding: 200px 0;
+}
+.card{
+    position: relative;
+    right: 0;
+    flex-direction: column;
+}
+}
